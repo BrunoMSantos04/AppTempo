@@ -10,7 +10,7 @@ async function buscarCidade(cidade){
     colocarDadosNaTela(dados)
 }
 
-function colocarDadosNaTela(dados){
+function colocarDadosNaTela (dados){
     document.querySelector(".cidade").innerHTML = "Tempo em " + dados.name
     document.querySelector(".temperatura").innerHTML = Math.floor(dados.main.temp) + "ºC"
     document.querySelector(".texto-previsao").innerHTML = dados.weather[0].description   
